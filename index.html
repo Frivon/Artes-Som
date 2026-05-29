@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Artes e Som</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#faf7fc;
+    color:#5f4b66;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#ffffff !important;
+    border-bottom:2px solid #d8b4fe;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.navbar-brand{
+    color:#b76fdc !important;
+    font-weight:bold;
+    font-size:1.4rem;
+}
+
+/* BANNER */
+
+.banner-piano{
+    height:550px;
+
+    background-image:
+    linear-gradient(
+        rgba(183,111,220,.50),
+        rgba(244,171,198,.50)
+    ),
+    url('imagens/banner-piano.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-bottom:4px solid #f4abc6;
+}
+
+.banner-content{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.banner-content h1{
+    font-size:4.5rem;
+    font-weight:700;
+    text-shadow:2px 2px 10px rgba(0,0,0,.5);
+}
+
+.banner-content p{
+    font-size:1.3rem;
+    margin-top:15px;
+}
+
+.banner-content .btn{
+    margin-top:20px;
+    padding:12px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    border:none;
+}
+
+/* TITULOS */
+
+.section-title{
+    text-align:center;
+    color:#b76fdc;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+/* CARDS */
+
+.card-musical{
+    background:#ffffff;
+    border:1px solid #f2d9f7;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    height:100%;
+}
+
+.card-musical:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(183,111,220,.25);
+}
+
+.icon{
+    font-size:4rem;
+    color:#d18ce0;
+}
+
+.card-musical h4{
+    color:#b76fdc;
+}
+
+.card-musical p{
+    color:#7c6a87;
+}
+
+/* BIBLIOTECA */
+
+.video-box{
+    background:#ffffff;
+    border-left:5px solid #f4abc6;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.video-box h4{
+    color:#b76fdc;
+    margin-bottom:20px;
+}
+
+.video-link{
+    display:block;
+    text-decoration:none;
+    background:#fdf0f7;
+    color:#5f4b66;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.video-link:hover{
+    background:#d8b4fe;
+    color:white;
+    transform:translateX(8px);
+}
+
+.tag{
+    float:right;
+    background:#f4abc6;
+    color:white;
+    padding:5px 10px;
+    border-radius:50px;
+    font-size:11px;
+    font-weight:bold;
+}
+
+/* BOTÃO */
+
+.btn-explorar{
+    background:#f4abc6;
+    color:white;
+}
+
+.btn-explorar:hover{
+    background:#d8b4fe;
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    background:#fdf0f7;
+    color:#7c6a87;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.banner-piano{
+    height:380px;
+}
+
+.banner-content h1{
+    font-size:2.5rem;
+}
+
+.banner-content p{
+    font-size:1rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<i class="bi bi-music-note-beamed"></i>
+Artes e Som
+</a>
+
+</div>
+</nav>
+
+<!-- BANNER -->
+
+<section class="banner-piano">
+
+<div class="banner-content">
+
+<h1>🎹 Artes e Som</h1>
+
+<p>
+Educação, Cultura, Música e Arte para todas as idades
+</p>
+
+<a href="#biblioteca" class="btn btn-explorar">
+Explorar Conteúdo
+</a>
+
+</div>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<div class="container py-5">
+
+<h2 class="section-title">
+Categorias
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4 col-lg-3">
+<div class="card-musical p-4 text-center">
+<div class="icon mb-3">
+<i class="bi bi-people-fill"></i>
+</div>
+<h4>Dinâmica para Idosos</h4>
+<p>Atividades recreativas e cognitivas.</p>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="card-musical p-4 text-center">
+<div class="icon mb-3">
+<i class="bi bi-music-note-list"></i>
+</div>
+<h4>Musicalização Infantil</h4>
+<p>Aprendizagem musical através de brincadeiras.</p>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="card-musical p-4 text-center">
+<div class="icon mb-3">
+<i class="bi bi-mic-fill"></i>
+</div>
+<h4>Canto e Coral</h4>
+<p>Técnicas vocais e ensaios.</p>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="card-musical p-4 text-center">
+<div class="icon mb-3">
+<i class="bi bi-palette-fill"></i>
+</div>
+<h4>Artes</h4>
+<p>Desenho, pintura e criatividade.</p>
+</div>
+</div>
+
+<!-- BIBLIOTECA -->
+
+<div id="biblioteca" class="mt-5">
+
+<h2 class="section-title">
+Biblioteca de Vídeos
+</h2>
+
+<div class="video-box">
+<h4>👵 Dinâmica Para Idosos</h4>
+
+<a href="https://www.facebook.com/reel/1380010153928573"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Exercício de Memória 01
+   <span class="tag">IDOSOS</span>
+</a>
+
+<a href="https://www.facebook.com/reel/926294310233865"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Exercício de Memória 02
+   <span class="tag">IDOSOS</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Exercício de Memória 03
+   <span class="tag">IDOSOS</span>
+</a>
+
+<a href="https://www.facebook.com/reel/LINK4"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Exercício de Memória 04
+   <span class="tag">IDOSOS</span>
+</a>
+
+</div>
+
+<div class="video-box">
+<h4>🎵 Musicalização Infantil</h4>
+
+<a href="https://www.facebook.com/reel/1703804087330310"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Ritmica
+   <span class="tag">INFANTIL</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Jogos Musicais
+   <span class="tag">INFANTIL</span>
+</a>
+</div>
+
+<div class="video-box">
+<h4>🎤 Canto e Coral</h4>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Técnica Vocal Básica
+   <span class="tag">CORAL</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Exercícios de Respiração
+   <span class="tag">CORAL</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Músicas
+   <span class="tag">CORAL</span>
+</a>
+</div>
+
+<div class="video-box">
+<h4>🎨 Artes</h4>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Decoração & Enfeites
+   <span class="tag">ARTES</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Pintura Em Tecido
+   <span class="tag">ARTES</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Artesanato
+   <span class="tag">ARTES</span>
+</a>
+
+<a href="#"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+   ▶ Idéias De Flores
+   <span class="tag">ARTES</span>
+</a>
+</div>
+
+
+
+</div>
+
+<footer>
+© 2026 Projeto Artes e Som • Educação, Cultura e Transformação
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
